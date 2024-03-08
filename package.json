@@ -1,7 +1,7 @@
 {
-  "name": "@onwidget/astrowind",
-  "description": "AstroWind: A free template using Astro 4.0 and Tailwind CSS. Astro starter theme.",
-  "version": "1.0.0-beta.20",
+  "name": "kettlebells-landing-page",
+  "description": "Landing page for BellSkill kettlebell training app.",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "dev": "astro dev",
