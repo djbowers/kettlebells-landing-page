@@ -2,15 +2,15 @@
 import Layout from '~/layouts/PageLayout.astro';
 
 import Hero from '~/components/widgets/Hero.astro';
-import Note from '~/components/widgets/Note.astro';
-// import Features from '~/components/widgets/Features.astro';
+// import Note from '~/components/widgets/Note.astro';
+import Features from '~/components/widgets/Features.astro';
 // import Features2 from '~/components/widgets/Features2.astro';
-// import Steps from '~/components/widgets/Steps.astro';
-// import Content from '~/components/widgets/Content.astro';
+import Steps from '~/components/widgets/Steps.astro';
+import Content from '~/components/widgets/Content.astro';
 // import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
 // import FAQs from '~/components/widgets/FAQs.astro';
 // import Stats from '~/components/widgets/Stats.astro';
-// import CallToAction from '~/components/widgets/CallToAction.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
 
 const metadata = {
   title: 'BellSkill — Kettlebell Training App',
@@ -31,11 +31,11 @@ const metadata = {
       // { text: 'Learn more', href: '#features' },
     ]}
     image={{
-      src: '',
+      src: 'src/assets/images/competition-bells.png',
       alt: 'BellSkill Hero Image',
     }}
   >
-    <Fragment slot="title"> Focus on movement,<br /> not counting reps. </Fragment>
+    <Fragment slot="title"> Focus on your workout,<br /> not counting reps. </Fragment>
 
     <Fragment slot="subtitle">
       BellSkill is a better way to get faster,<br /> more noticeable results from your kettlebell training.
@@ -48,88 +48,88 @@ const metadata = {
 
   <!-- Features Widget *************** -->
 
-  <!-- <Features
+  <Features
     id="features"
     tagline="Features"
-    title="What you get with AstroWind"
-    subtitle="One of the most professional and comprehensive templates currently on the market. Most starred & forked Astro theme in 2022."
+    title="What sets BellSkill apart..."
+    subtitle="The first app built for autoregulated kettlebell programs."
     items={[
       {
-        title: 'Astro + Tailwind CSS Integration',
+        title: 'Workout Timers',
         description:
-          'A seamless integration between two great frameworks that offer high productivity, performance and versatility.',
-        icon: 'tabler:brand-tailwind',
+          'Optimize your training regimen with customizable rest and interval timers, allowing for structured and effective workouts.',
+        icon: 'tabler:clock-hour-2',
       },
       {
-        title: 'Ready-to-use Components',
+        title: 'Various Weight Configurations',
         description:
-          'Widgets made with Tailwind CSS ready to be used in Marketing Websites, SaaS, Blogs, Personal Profiles, Small Business...',
-        icon: 'tabler:components',
+          'Tailor your workouts to your fitness level and goals with the flexibility to choose from single bell, double bell, or bodyweight configurations.',
+        icon: 'tabler:settings',
       },
       {
-        title: 'Best Practices',
+        title: 'Rep Ladders',
         description:
-          'Creating secure, efficient, and user-friendly websites that deliver exceptional experiences and lasting value.',
-        icon: 'tabler:list-check',
+          'Challenge yourself and track your progress effortlessly with our rep ladder feature, enabling you to set and conquer new personal bests.',
+        icon: 'tabler:ladder',
       },
       {
-        title: 'Excellent Page Speed',
+        title: 'Volume & Repetition Counter',
         description:
-          'Having a good page speed impacts organic search ranking, improves user experience (UI/UX) and increase conversion rates.',
-        icon: 'tabler:rocket',
+          'Keep tabs on your performance with our precise rep/volume counter, empowering you to monitor and improve your strength and endurance over time.',
+        icon: 'tabler:trending-up',
       },
       {
-        title: 'Search Engine Optimization (SEO)',
+        title: 'Repeat Workouts',
         description:
-          "SEO lies in its ability to enhance a website's visibility, driving organic traffic and enabling it to reach a wider audience.",
-        icon: 'tabler:arrows-right-left',
+          'Gain valuable insights into your fitness journey by accessing your comprehensive workout history, allowing you to easily repeat your favorite or most effective workouts.',
+        icon: 'tabler:repeat',
       },
       {
-        title: 'Open to new ideas and contributions',
+        title: 'Choose RPE',
         description:
-          'Embracing a culture that is open to new ideas and contributions is integral fostering innovation, collaboration, and a dynamic user experience.',
-        icon: 'tabler:bulb',
+          'Customize your workout intensity based on your individual fitness level and preferences by selecting your desired Rate of Perceived Exertion (RPE) for each session.',
+        icon: 'tabler:color-picker',
       },
     ]}
-  /> -->
+  />
 
   <!-- Content Widget **************** -->
 
-  <!-- <Content
+  <Content
     isReversed
-    tagline="Inside template"
-    title="AstroWind's Blueprint: Fun Meets Functionality!"
+    tagline="Inside the app"
+    title="BellSkill's Blueprint: Interval Timer meets Volume Tracker"
     items={[
       {
-        title: 'Built on top of Astro 4.0',
+        title: 'Versatility',
         description:
-          'Benefiting from the performance and developer-friendly features of this modern static site generator.',
+          "Whether you're a beginner or seasoned athlete, our app caters to all fitness levels and preferences, offering diverse weight configurations and customizable settings to suit your needs.",
       },
       {
-        title: 'Styled using Tailwind CSS',
+        title: 'Progress Tracking',
         description:
-          'Facilitating rapid design and consistent styling with this highly popular utility-first CSS framework.',
+          'Monitor your performance and progress effortlessly with intuitive tracking tools, empowering you to set and achieve your fitness goals.',
       },
       {
-        title: 'Cross-browser compatibility',
+        title: 'Adaptability',
         description:
-          'Ensure your website looks and functions consistently across various web browsers, delivering a seamless experience to all users.',
+          'Adjust your workout intensity on the fly with the flexibility to choose your Rate of Perceived Exertion (RPE), ensuring a challenging yet sustainable approach to fitness that aligns with your capabilities and goals.',
       },
     ]}
     image={{
-      src: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
-      alt: 'Colorful Image',
+      src: 'src/assets/images/man-holding-kettlebell-portrait.png',
+      alt: 'Man Holding Kettlebell',
     }}
   >
     <Fragment slot="content">
-      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Building on modern foundations</h3>
-      Gain a competitive advantage by incorporating industry leading practices
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Bring your own movements</h3>
+      Use one of many popular kettlebell programs, or go freestyle with variations of basic kettlebell movements.
     </Fragment>
 
     <Fragment slot="bg">
       <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
     </Fragment>
-  </Content> -->
+  </Content>
 
   <!-- Content Widget **************** -->
 
@@ -208,37 +208,42 @@ const metadata = {
 
   <!-- Steps Widget ****************** -->
 
-  <!-- <Steps
-    title="Get your dream website up and running in no time with AstroWind."
+  <Steps
+    title="Start consistently crushing your goals today with BellSkill."
     items={[
       {
-        title: 'Step 1: <span class="font-medium">Download</span>',
-        description:
-          "Kickstart with GitHub! Either fork the AstroWind template or simply click 'Use this template'. Your canvas awaits, ready for your digital masterpiece. In just a few clicks, you've already set the foundation.",
-        icon: 'tabler:package',
+        title: 'Step 1: <span class="font-medium">Sign up</span>',
+        description: 'Use your email to sign up with a passwordless magic link.',
+        icon: 'tabler:at',
       },
       {
-        title: 'Step 2: <span class="font-medium">Add content</em>',
+        title: 'Step 2: <span class="font-medium">Customize and start your workout</em>',
         description:
-          "Pour your vision into it. Add images, text, and all that jazz to breathe life into your digital space. Remember, it's the content that tells your story, so make it captivating.",
-        icon: 'tabler:letter-case',
+          'Enter the names of movements you want to complete, adjust the rep scheme and timers, and start your workout.',
+        icon: 'tabler:adjustments',
       },
       {
-        title: 'Step 3: <span class="font-medium">Customize styles</span>',
+        title: 'Step 3: <span class="font-medium">Complete your workout</span>',
         description:
-          'Give it your personal touch. Tailor colors, fonts, and layouts until it feels just right. Your unique flair, amplified by AstroWind! Precision in design ensures a seamless user experience.',
-        icon: 'tabler:paint',
+          'After every set, click continue to move on to the next set. Complete as many rounds as possible in the time allotted.',
+        icon: 'tabler:activity',
       },
       {
-        title: 'Ready!',
+        title: 'Step 4: <span class="font-medium">Choose an RPE</span>',
+        description:
+          "When you're done finished with a workout, choose an RPE to track progression from workout to workout.",
+        icon: 'tabler:award',
+      },
+      {
+        title: 'Repeat!',
         icon: 'tabler:check',
       },
     ]}
     image={{
-      src: 'https://images.unsplash.com/photo-1616198814651-e71f960c3180?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80',
+      src: 'src/assets/images/competition-bells-racked.png',
       alt: 'Steps image',
     }}
-  /> -->
+  />
 
   <!-- Features2 Widget ************** -->
 
@@ -368,24 +373,17 @@ const metadata = {
 
   <!-- CallToAction Widget *********** -->
 
-  <!-- <CallToAction
+  <CallToAction
     actions={[
       {
         variant: 'primary',
-        text: 'Get template',
-        href: 'https://github.com/onwidget/astrowind',
-        target: '_blank',
-        icon: 'tabler:download',
+        text: 'Sign up for free',
+        href: 'https://app.bellskill.com',
       },
     ]}
   >
-    <Fragment slot="title">
-      Astro&nbsp;+&nbsp;<br class="block sm:hidden" /><span class="sm:whitespace-nowrap">Tailwind CSS</span>
-    </Fragment>
+    <Fragment slot="title"> BellSkill </Fragment>
 
-    <Fragment slot="subtitle">
-      Be very surprised by these huge fake numbers you are seeing on this page. <br class="hidden md:inline" />Don't
-      waste more time! :P
-    </Fragment>
-  </CallToAction> -->
+    <Fragment slot="subtitle"> Kettlebell training made easy. </Fragment>
+  </CallToAction>
 </Layout>
