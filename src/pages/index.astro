@@ -34,11 +34,12 @@ const metadata = {
       src: '~/assets/images/competition-bells.png',
       alt: 'BellSkill Hero Image',
     }}
+    tagline="The Strength-Endurance Revolution Begins Now!"
   >
-    <Fragment slot="title"> Focus on your workout,<br /> not counting reps. </Fragment>
+    <Fragment slot="title"> Build a Better Body with BellSkill </Fragment>
 
     <Fragment slot="subtitle">
-      BellSkill is a better way to get faster,<br /> more noticeable results from your kettlebell training.
+      Transform Your Body, Crush Your Limits, and Dominate Every Workout – All from the Comfort of Home.
     </Fragment>
   </Hero>
 
@@ -46,74 +47,32 @@ const metadata = {
 
   <!-- <Note /> -->
 
-  <!-- Features Widget *************** -->
-
-  <Features
-    id="features"
-    tagline="Features"
-    title="What sets BellSkill apart..."
-    subtitle="The first app built for autoregulated kettlebell programs."
-    items={[
-      {
-        title: 'Workout Timers',
-        description:
-          'Optimize your training regimen with customizable rest and interval timers, allowing for structured and effective workouts.',
-        icon: 'tabler:clock-hour-2',
-      },
-      {
-        title: 'Various Weight Configurations',
-        description:
-          'Tailor your workouts to your fitness level and goals with the flexibility to choose from single bell, double bell, or bodyweight configurations.',
-        icon: 'tabler:settings',
-      },
-      {
-        title: 'Rep Ladders',
-        description:
-          'Challenge yourself and track your progress effortlessly with our rep ladder feature, enabling you to set and conquer new personal bests.',
-        icon: 'tabler:ladder',
-      },
-      {
-        title: 'Volume & Repetition Counter',
-        description:
-          'Keep tabs on your performance with our precise rep/volume counter, empowering you to monitor and improve your strength and endurance over time.',
-        icon: 'tabler:trending-up',
-      },
-      {
-        title: 'Repeat Workouts',
-        description:
-          'Gain valuable insights into your fitness journey by accessing your comprehensive workout history, allowing you to easily repeat your favorite or most effective workouts.',
-        icon: 'tabler:repeat',
-      },
-      {
-        title: 'Choose RPE',
-        description:
-          'Customize your workout intensity based on your individual fitness level and preferences by selecting your desired Rate of Perceived Exertion (RPE) for each session.',
-        icon: 'tabler:color-picker',
-      },
-    ]}
-  />
-
   <!-- Content Widget **************** -->
 
   <Content
     isReversed
     tagline="Inside the app"
-    title="BellSkill's Blueprint: Interval Timer meets Volume Tracker"
+    title="Here's what BellSkill brings to the table:"
     items={[
       {
-        title: 'Versatility',
+        title: 'Revolutionary Strength-Endurance Training:',
         description:
-          "Whether you're a beginner or seasoned athlete, our app caters to all fitness levels and preferences, offering diverse weight configurations and customizable settings to suit your needs.",
+          "Say goodbye to boring, repetitive workouts and hello to a new era of fitness. With BellSkill, you'll experience the perfect blend of strength and endurance training, optimized for maximum gains in minimal time.",
       },
       {
-        title: 'Progress Tracking',
+        title: 'Personalized Workouts for Every Level:',
         description:
-          'Monitor your performance and progress effortlessly with intuitive tracking tools, empowering you to set and achieve your fitness goals.',
+          "Whether you're a complete beginner or a seasoned fitness enthusiast, BellSkill has you covered. Our expertly crafted workouts adapt to your skill level, ensuring a challenging yet achievable experience every time.",
       },
       {
-        title: 'Adaptability',
+        title: 'Track Your Progress, Crush Your Goals:',
         description:
-          'Adjust your workout intensity on the fly with the flexibility to choose your Rate of Perceived Exertion (RPE), ensuring a challenging yet sustainable approach to fitness that aligns with your capabilities and goals.',
+          "With our intuitive app interface, tracking your progress has never been easier. From reps and sets to volume and intensity, you'll have all the data you need to stay motivated, stay on track, and smash through plateaus.",
+      },
+      {
+        title: 'Join the BellSkill Community:',
+        description:
+          "Gain access to a supportive community of like-minded individuals, all on a mission to elevate their fitness game. Share your successes, seek advice, and celebrate victories together – because we're stronger when we work as a team.",
       },
     ]}
     image={{
@@ -121,11 +80,6 @@ const metadata = {
       alt: 'Man Holding Kettlebell',
     }}
   >
-    <Fragment slot="content">
-      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Bring your own movements</h3>
-      Use one of many popular kettlebell programs, or go freestyle with variations of basic kettlebell movements.
-    </Fragment>
-
     <Fragment slot="bg">
       <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
     </Fragment>
@@ -206,37 +160,87 @@ const metadata = {
     </Fragment>
   </Content> -->
 
+  <!-- Features Widget *************** -->
+
+  <Features
+    id="features"
+    tagline="Features"
+    title="What sets BellSkill apart..."
+    subtitle="The first app built for autoregulated kettlebell programs."
+    items={[
+      {
+        title: 'Workout Timers',
+        description:
+          'Elevate your training experience with precision-engineered rest and interval timers. Crafted for efficiency and effectiveness, our customizable timers ensure every second counts towards your fitness goals.',
+        icon: 'tabler:clock-hour-2',
+      },
+      {
+        title: 'Weight Configurations',
+        description:
+          'Unlock the full potential of your workouts with dynamic weight configurations. Whether you prefer the challenge of kettlebells, the stability of bodyweight exercises, or the intensity of dual-bell workouts, our platform adapts to your needs.',
+        icon: 'tabler:settings',
+      },
+      {
+        title: 'Rep Ladders',
+        description:
+          'Climb to new heights of achievement with our innovative rep ladder feature. Fuel your ambition, track your progress, and conquer personal milestones with ease.',
+        icon: 'tabler:ladder',
+      },
+      {
+        title: 'Volume & Repetition Counter',
+        description:
+          "Harness the power of precise performance tracking with our advanced rep/volume counter. Empowering you to quantify your efforts and progress, it's the ultimate tool for sculpting strength and endurance.",
+        icon: 'tabler:trending-up',
+      },
+      {
+        title: 'Repeat Workouts',
+        description:
+          'Uncover the secrets of your success with instant access to your workout history. Relive your finest moments, replicate your most effective routines, and stay inspired on your fitness journey.',
+        icon: 'tabler:repeat',
+      },
+      {
+        title: 'Choose Post-Workout RPE',
+        description:
+          'Personalize your post-workout experience with the ability to record your Perceived Rate of Exertion (RPE) after each session. Reflect on your effort level, gauge your recovery needs, and fine-tune your fitness journey based on your post-workout perception.',
+        icon: 'tabler:color-picker',
+      },
+    ]}
+  />
+
   <!-- Steps Widget ****************** -->
 
   <Steps
     title="Start consistently crushing your goals today with BellSkill."
     items={[
       {
-        title: 'Step 1: <span class="font-medium">Sign up</span>',
-        description: 'Use your email to sign up with a passwordless magic link.',
-        icon: 'tabler:at',
+        title: 'Step 1: <span class="font-medium">Define Your Fitness Goals</span>',
+        description:
+          'Begin by clearly defining your fitness goals. Whether you aim to increase strength, improve endurance, or simply maintain overall health, establishing clear objectives will guide your journey with BellSkill.',
+        icon: 'tabler:ballpen',
       },
       {
-        title: 'Step 2: <span class="font-medium">Customize and start your workout</em>',
+        title: 'Step 2: <span class="font-medium">Customize Your Workouts</em>',
         description:
-          'Enter the names of movements you want to complete, adjust the rep scheme and timers, and start your workout.',
+          "Utilize the app's features to tailor your workouts to align with your goals and preferences. Choose from a variety of weight configurations, exercise options, and interval settings to create a personalized training regimen that suits your needs.",
         icon: 'tabler:adjustments',
       },
       {
-        title: 'Step 3: <span class="font-medium">Complete your workout</span>',
+        title: 'Step 3: <span class="font-medium">Track Your Progress</span>',
         description:
-          'After every set, click continue to move on to the next set. Complete as many rounds as possible in the time allotted.',
+          "Take advantage of the app's comprehensive tracking tools to monitor your performance over time. Review your reps, volume, and perceived exertion levels after each workout to gain valuable insights into your progress and areas for improvement.",
         icon: 'tabler:activity',
       },
       {
-        title: 'Step 4: <span class="font-medium">Choose an RPE</span>',
+        title: 'Step 4: <span class="font-medium">Stay Consistent</span>',
         description:
-          "When you're done finished with a workout, choose an RPE to track progression from workout to workout.",
+          'Consistency is key to achieving lasting results. Commit to regular workouts using BellSkill, and aim to progressively challenge yourself by gradually increasing intensity, volume, or difficulty as your fitness improves.',
         icon: 'tabler:award',
       },
       {
-        title: 'Repeat!',
-        icon: 'tabler:check',
+        title: 'Step 5: <span class="font-medium">Listen to Your Body</span>',
+        description:
+          "Pay attention to your body's signals and adjust your training accordingly. Use the post-workout RPE feature to gauge your exertion levels and assess your recovery needs. Remember to prioritize rest and recovery to prevent burnout and optimize performance.",
+        icon: 'tabler:body-scan',
       },
     ]}
     image={{
@@ -382,8 +386,13 @@ const metadata = {
       },
     ]}
   >
-    <Fragment slot="title"> BellSkill </Fragment>
+    <Fragment slot="title"> BellSkill Training App</Fragment>
 
-    <Fragment slot="subtitle"> Kettlebell training made easy. </Fragment>
+    <Fragment slot="tagline"> Kettlebell training made easy. </Fragment>
+
+    <Fragment slot="subtitle"
+      >Don't let another day pass you by without unlocking your true potential. Join the BellSkill revolution today and
+      embark on a journey of transformation, strength, and self-discovery.
+    </Fragment>
   </CallToAction>
 </Layout>
